@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif ;
+    width: 100vw;
+    height: 100vh;
 
 }
 
@@ -12,7 +14,7 @@ body {
     width: 100%;
 }
 
-/*Header*/
+/*--------------------------Header--------------------------*/
 
 header .container{
     background-color: white;
@@ -55,4 +57,32 @@ header li{
 
 header a:hover{
     color: #5A67D8;
+}
+
+/*--------------------------Hero Overview Section--------------------------*/
+
+main .overview-hero {
+    background-color:#E2E8F0;
+    grid-column: span 2;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    align-items: center;
+}
+
+main .overview-hero .overview-hero-image img{
+    float: left;
+    width: 250px;
+    padding-right: 2em;
+    grid-column: 1;
+}
+
+main .overview-hero .overview-hero-text{
+    /* display: inline-block; */
+    /* position: relative; */
+    grid-column: 1;
+    width: 850px;
 }
