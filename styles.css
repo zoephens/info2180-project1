@@ -291,3 +291,11 @@ footer p{
     padding:0;
 }
 
+/*--------------------------Message--------------------------*/
+
+.message{
+    color: #beffc9;
+    margin-top: 20px;    
+    text-shadow: 4px 4px 5px #22904f;
+}
+
