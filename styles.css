@@ -52,16 +52,19 @@ header ul{
     display: inline;
 } 
 
-header nav ul, li, a{
+header nav ul, li{
     font-size: 18px;
     display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
-    color: #6b7280; 
 }
 
 header li{
     padding: 0.5em;
+}
+
+header a{
+    color: #6b7280; 
+    text-decoration: none;
+    list-style-type: none;
 }
 
 header a:hover{
@@ -188,9 +191,10 @@ main .learn-about h2{
     padding: 15px 25px;
 }
 
-.testing .cta .btn{
+.testing .cta .btn, a{
     text-align: center;
     color: white;
+    text-decoration: none;
 }
 
 /*--------------------------Stories--------------------------*/
@@ -224,3 +228,49 @@ main .learn-about h2{
    font-size: 18px;
     
  }
+
+/*--------------------------Newsletter--------------------------*/
+.newsletter{
+    background-color: #48BB78;
+    color: white;
+    padding: 50px 0px 80px 0px;
+}
+
+.newsletter .container{
+    flex-wrap: nowrap;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}   
+
+.newsletter .container form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-gap: 50px;
+    width: 500px;
+    
+}
+
+.newsletter input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    display: inline;
+    grid-column: 1;
+    padding: 20px;
+}
+
+.newsletter button{
+    width: 80%;
+    color: white;
+    background-color: #5A67D8;
+    border: none;
+    border-radius: 5px;
+    grid-column: 2;
+    padding: 20px;
+    float: right;
+    
+}
