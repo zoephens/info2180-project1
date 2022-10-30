@@ -108,6 +108,7 @@ main .learn-about .cards{
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
     grid-template-rows: 1fr;
+    padding-bottom: 40px;
 }
 
 main .learn-about .card{
@@ -135,4 +136,45 @@ main .learn-about h2{
     color: #48BB78;
     font-size: 24px;
     padding: 5px;
+}
+
+/*--------------------------Testing--------------------------*/
+.testing{
+    padding: 150px;
+    color: white;
+    background-color: #4A5568;
+}
+
+.testing .container{
+    /* flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    
+
+}
+
+.testing .testing-description{
+    display: inline-block;
+    grid-column: 1;
+}
+
+.testing .cta{
+    text-align: center;
+    display: inline-block;
+    grid-column: 2;
+    background-color: #48BB78;
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px 25px;
+}
+
+.testing .cta .btn{
+    text-align: center;
+    color: white;
 }
