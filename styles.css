@@ -271,6 +271,19 @@ main .learn-about h2{
     border-radius: 5px;
     grid-column: 2;
     padding: 20px;
-    float: right;
-    
+    float: right; 
 }
+
+/*--------------------------Footer--------------------------*/
+footer{
+    background-color: #4A5568;
+    padding: 35px;
+    color: white;
+}
+
+footer p{
+    margin: 0;
+    border: 0;
+    padding:0;
+}
+
