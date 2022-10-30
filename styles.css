@@ -44,9 +44,6 @@ header h1{
     margin: 0;
     border: 0; */
     /* vertical-align: baseline; */
-    
-    
-
 }
 
 header ul{
@@ -93,6 +90,7 @@ main .overview-hero .overview-hero-image img{
     /* grid-column: 1; */
 }
 
+
 main .overview-hero .overview-hero-text{
     /* display: inline-block; */
     /* position: relative; */
@@ -101,6 +99,11 @@ main .overview-hero .overview-hero-text{
 }
 
 /*--------------------------Learn About Section--------------------------*/
+main .learn-about{
+    margin-bottom: 50px;
+
+}
+
 main .learn-about .cards{
     background-color: white;
     font-size: 18px;
@@ -108,19 +111,30 @@ main .learn-about .cards{
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
     grid-template-rows: 1fr;
-    padding-bottom: 40px;
+    padding: 0;
+
 }
 
 main .learn-about .card{
     border: 2px solid #E2E8F0;
     border-radius: 5px;
     box-shadow: 5px 10px #eceef3;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px 20px;
+    
 }
 
 main .learn-about .cards img{
     width: 250px;
-    padding-bottom: 50px;
+    vertical-align: top;
+    padding-top: 35px;
+}
+
+main .learn-about .cards img{
+    width: 250px;
+    vertical-align: top;
 }
 
 main .learn-about .cards .card .article-body{
@@ -178,3 +192,35 @@ main .learn-about h2{
     text-align: center;
     color: white;
 }
+
+/*--------------------------Stories--------------------------*/
+.stories .container{
+    padding: 150px 0px;
+}
+
+.stories .container article{
+    /* display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr; */
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.stories .container img{
+    border-radius: 50%;
+    width: 250px; 
+    margin: 35px 35px 35px 0px;
+}
+
+.stories .container h2, a{
+   color: #5A67D8;
+
+}
+
+.stories .container h3{
+   font-size: 18px;
+    
+ }
